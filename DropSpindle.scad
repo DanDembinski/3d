@@ -1,0 +1,24 @@
+difference()
+{
+    //Base
+    translate([0,10,0])
+        {
+        cube([5,20,3]);
+        }
+   //Cutout
+    translate([-3,20,-18])
+    {
+        rotate([0,90,0])
+        {
+        cylinder(20,20,20);
+        }
+
+    }
+    //Hole
+        translate([2.5,20,0])
+     {
+         cylinder(10,1.5,1.5);
+     }
+}
+//Stick
+cylinder(50,1.5,.5);
