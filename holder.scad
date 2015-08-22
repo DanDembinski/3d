@@ -6,3 +6,22 @@ difference()
 		cylinder(11,9,9);
 	}
 }
+
+//Triangle
+scale(.3)
+{
+	rotate([0,90,0])
+	{
+		difference()
+		{
+	    		cube(10);
+			translate([-3,10,0])
+			{
+				rotate([45,0,0])
+				{
+					cube(30);
+				}
+			}
+		}
+	}
+}
